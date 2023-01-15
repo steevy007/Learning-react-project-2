@@ -12,17 +12,17 @@ function App() {
         {
           username,
           age,
-          id:Math.random().toString()
+          id: Math.random().toString(),
         },
       ];
     });
   };
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={users} />
-    </div>
+    </>
   );
 }
 
